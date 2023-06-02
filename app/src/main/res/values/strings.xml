@@ -3,4 +3,6 @@
     <string name="job_applications">Job Applications</string>
     <string name="map">Map</string>
     <string name="add_job_application">Add Job Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
