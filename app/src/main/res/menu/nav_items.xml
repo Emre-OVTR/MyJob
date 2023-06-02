@@ -6,11 +6,13 @@
             android:title="@string/job_applications"
             android:icon="@drawable/round_list_alt_24"/>
 
+        <item android:id="@+id/map_fragment"
+            android:title="@string/map"
+            android:icon="@drawable/round_map_24" />
+        
         <item android:id="@+id/add_job_fragment"
             android:title="@string/add_job_application"
             android:icon="@drawable/round_post_add_24"/>
 
-        <item android:id="@+id/map_fragment"
-            android:title="@string/map"
-            android:icon="@drawable/round_map_24" />
+
 </menu>
