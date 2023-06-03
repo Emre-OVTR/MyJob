@@ -3,20 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_nav_graph"
-    app:startDestination="@id/jobAppListFragment">
+    app:startDestination="@id/list_fragment">
 
     <fragment
-        android:id="@+id/jobAppListFragment"
+        android:id="@+id/list_fragment"
         android:name="com.example.myjob.ui.jobappsview.JobAppListFragment"
         android:label="fragment_job_app_list"
         tools:layout="@layout/fragment_job_app_list" />
     <fragment
-        android:id="@+id/mapFragment"
+        android:id="@+id/map_fragment"
         android:name="com.example.myjob.ui.mapview.MapFragment"
         android:label="fragment_map"
         tools:layout="@layout/fragment_map" />
     <fragment
-        android:id="@+id/addJobAppFragment"
+        android:id="@+id/add_job_fragment"
         android:name="com.example.myjob.ui.addview.AddJobAppFragment"
         android:label="fragment_add_job_app"
         tools:layout="@layout/fragment_add_job_app" />
