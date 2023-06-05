@@ -8,16 +8,16 @@
     <fragment
         android:id="@+id/list_fragment"
         android:name="com.example.myjob.ui.jobappsview.JobAppListFragment"
-        android:label="fragment_job_app_list"
+        android:label="Job Applications"
         tools:layout="@layout/fragment_job_app_list" />
     <fragment
         android:id="@+id/map_fragment"
         android:name="com.example.myjob.ui.mapview.MapFragment"
-        android:label="fragment_map"
+        android:label="Map"
         tools:layout="@layout/fragment_map" />
     <fragment
         android:id="@+id/add_job_fragment"
         android:name="com.example.myjob.ui.addview.AddJobAppFragment"
-        android:label="fragment_add_job_app"
+        android:label="Add a new Job Application"
         tools:layout="@layout/fragment_add_job_app" />
 </navigation>
