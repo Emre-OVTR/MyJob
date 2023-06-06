@@ -53,4 +53,7 @@ dependencies {
     // Optional -- UI testing with Espresso
     androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
 
+    //Google Map
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+
 }
