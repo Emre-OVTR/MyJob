@@ -1,12 +1,17 @@
 package com.example.myjob
 
-import androidx.test.platform.app.InstrumentationRegistry
-import androidx.test.ext.junit.runners.AndroidJUnit4
-
+import androidx.test.core.app.ActivityScenario
+import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.click
+import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.withId
+import androidx.test.runner.AndroidJUnit4
+import com.example.myjob.ui.MainActivity
+import org.junit.Assert.*
+import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-
-import org.junit.Assert.*
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -15,10 +20,21 @@ import org.junit.Assert.*
  */
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
+
+    @Before
+    fun setUp(){
+        ActivityScenario.launch(MainActivity::class.java)
+    }
+
     @Test
-    fun useAppContext() {
-        // Context of the app under test.
-        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.myjob", appContext.packageName)
+    fun checkNavigationBetweenFragment() {
+
+        onView(withId(R.id.map_fragment)).perform(click())
+        onView(withId(R.id.map_fragment)).check(matches(isDisplayed()))
+        onView(withId(R.id.list_fragment)).perform(click())
+        onView(withId(R.id.list_fragment)).check(matches(isDisplayed()))
+        onView(withId(R.id.add_job_fragment)).perform(click())
+        onView(withId(R.id.add_job_fragment)).check(matches(isDisplayed()))
+
     }
 }
